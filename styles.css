@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #1f4037, #99f2c8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero .btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: white;
+  color: #1f4037;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  background: #f4f4f4;
+}
+
+.card i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1f4037;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 15px;
+}
