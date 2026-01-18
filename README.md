@@ -61,15 +61,13 @@ Copy code
       "Effect": "Allow",
       "Principal": "*",
       "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::<bucket-name>/*"
+      "Resource": "arn:aws:s3:::<sathwik-portfolio-2026>/*"
     }
   ]
 }
 Verified website via S3 endpoint:
 
-php-template
-Copy code
-http://<bucket-name>.s3-website.<region>.amazonaws.com
+http://sathwik-portfolio-2026.s3-website.us-east-2.amazonaws.com/
 5️⃣ Configure CloudFront
 Created a CloudFront distribution with the S3 website as origin
 
@@ -81,24 +79,20 @@ Verified the live website via CloudFront URL
 
 📄 Deliverables
 GitHub Repository
-Link: GitHub Repo
+Link: https://github.com/sathwikreddy12/portfolio
 
 Hosted Website URL
-CloudFront URL: https://<distribution-id>.cloudfront.net
+S3 URL: http://sathwik-portfolio-2026.s3-website.us-east-2.amazonaws.com/
 
 Screenshots (Optional)
 
 S3 Bucket policy & configuration
-
-CloudFront distribution status
 
 Live website
 
 README.md
 Explains project structure, deployment steps, commands, and architecture (this file)
 
-Optional Screen Recording
-60–90 second video showing the live site in action
 
 🔐 Security & Best Practices
 HTTPS enabled via CloudFront TLS certificate
