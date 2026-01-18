@@ -12,11 +12,8 @@ The website is built using **HTML and CSS**, version-controlled with **Git/GitHu
 portfolio/
 ├── index.html
 ├── styles.css
-├── assets/ # Images and media files
+├── assets
 └── README.md
-
-yaml
-Copy code
 
 ---
 
@@ -41,11 +38,7 @@ Enabled Static Website Hosting
 
 Set index.html as the default root object
 
-Uploaded files using CLI:
 
-bash
-Copy code
-aws s3 cp ./portfolio s3://<bucket-name>/ --recursive
 4️⃣ Configure Bucket Policy
 Disabled Block Public Access
 
